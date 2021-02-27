@@ -4,4 +4,178 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".yourWeekActivity"/>
+    tools:context=".yourWeekActivity" />
+
+    <Button
+        android:id="@+id/monday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Monday"
+        app:layout_constraintBottom_toTopOf="@id/tuesday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/monText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tuesday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Tuesday"
+        app:layout_constraintBottom_toTopOf="@id/wednesday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tueText"
+        app:layout_constraintTop_toBottomOf="@id/monday" />
+
+    <Button
+        android:id="@+id/wednesday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Wednesday"
+        app:layout_constraintBottom_toTopOf="@id/thursday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/wedText"
+        app:layout_constraintTop_toBottomOf="@id/tuesday" />
+
+    <Button
+        android:id="@+id/thursday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Thursday"
+        app:layout_constraintBottom_toTopOf="@id/friday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/thuText"
+        app:layout_constraintTop_toBottomOf="@id/wednesday" />
+
+    <Button
+        android:id="@+id/friday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Friday"
+        app:layout_constraintBottom_toTopOf="@id/saturday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/friText"
+        app:layout_constraintTop_toBottomOf="@id/thursday" />
+
+    <Button
+        android:id="@+id/saturday"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Saturday"
+        app:layout_constraintBottom_toTopOf="@id/sunday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/satText"
+        app:layout_constraintTop_toBottomOf="@id/friday" />
+
+    <Button
+android:id="@+id/sunday"
+android:layout_height="wrap_content"
+android:layout_width="wrap_content"
+android:text="Sunday"
+app:layout_constraintBottom_toTopOf="@id/saveButton"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toLeftOf="@id/sunText"
+app:layout_constraintTop_toBottomOf="@id/saturday" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/monText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/tueText"
+        app:layout_constraintLeft_toRightOf="@id/monday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/tueText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/wedText"
+        app:layout_constraintLeft_toRightOf="@id/tuesday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monText" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/wedText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/thuText"
+        app:layout_constraintLeft_toRightOf="@id/wednesday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tueText" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/thuText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/friText"
+        app:layout_constraintLeft_toRightOf="@id/thursday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wedText" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/friText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/satText"
+        app:layout_constraintLeft_toRightOf="@id/friday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thuText" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/satText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/sunText"
+        app:layout_constraintLeft_toRightOf="@id/saturday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/friText" />
+
+    <EditText
+        android:ems="2"
+        android:gravity="center"
+        android:id="@+id/sunText"
+        android:inputType="textPersonName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/saveButton"
+        app:layout_constraintLeft_toRightOf="@id/sunday"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/satText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="saveData"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sunday" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

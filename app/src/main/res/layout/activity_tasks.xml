@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".tasksActivity">
 
+    <Button
+        android:id="@+id/addNewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new Task"
+        app:layout_constraintBottom_toTopOf="@+id/todayTasks"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/myTasks"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="addNewTaskFunc"/>
+
+    <Button
+        android:id="@+id/myTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        app:layout_constraintLeft_toRightOf="@id/addNewTask"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/todayTasks"
+        android:onClick="myTasksFunc"
+        />
+
+    <Button
+        android:id="@+id/todayTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today Tasks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addNewTask"
+        android:onClick="todayTasksFunc"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
