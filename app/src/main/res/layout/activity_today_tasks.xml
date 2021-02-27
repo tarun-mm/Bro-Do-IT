@@ -6,4 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".TodayTasks">
 
+    <Button
+        android:id="@+id/nameTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/nameTaskText"
+        app:layout_constraintBottom_toTopOf="@id/hoursTaskButton"/>
+
+    <Button
+        android:id="@+id/hoursTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Number of \nHours"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/hoursTaskText"
+        app:layout_constraintTop_toBottomOf="@id/nameTaskButton"
+        app:layout_constraintBottom_toTopOf="@id/Next"/>
+
+    <TextView
+        android:id="@+id/nameTaskText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/nameTaskButton"
+        app:layout_constraintBottom_toTopOf="@id/hoursTaskText"/>
+
+    <TextView
+        android:id="@+id/hoursTaskText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/Next"
+        app:layout_constraintLeft_toRightOf="@id/hoursTaskButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTaskText" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        app:layout_constraintBottom_toTopOf="@id/Done"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hoursTaskText"
+        android:onClick="changeDataFunc"
+        />
+
+    <Button
+        android:id="@+id/Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Next"
+        android:onClick="doneDataFunc"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
