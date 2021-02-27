@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BroDoIT">
-        <activity android:name=".tasksActivity"></activity>
+        <activity android:name=".TodayTasks"></activity>
+        <activity android:name=".MyTasks" />
+        <activity android:name=".AddTask" />
+        <activity android:name=".tasksActivity" />
         <activity android:name=".yourWeekActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
